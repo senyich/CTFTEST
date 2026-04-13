@@ -1,5 +1,10 @@
-services:
-  cyber-bank-postgres:
+serasdasdas
+asd
+asd
+asd
+asdasda
+asdasdasd
+asdasd  cyber-bank-postgres:
     image: postgres:16
     restart: unless-stopped
     mem_limit: 1G
