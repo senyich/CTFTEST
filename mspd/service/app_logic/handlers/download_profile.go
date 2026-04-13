@@ -11,10 +11,7 @@ import (
 
 func Download_profile(w http.ResponseWriter, r *http.Request) {
 	user, err := utils.AuthCheck(w, r)
-	if err != nil {
-		utils.DropError(w, r, err, http.StatusForbidden)
-		return
-	}
+
 	susID, e := strconv.Atoi(r.FormValue("ID"))
 	ext := r.FormValue("ext")
 	if e != nil {
